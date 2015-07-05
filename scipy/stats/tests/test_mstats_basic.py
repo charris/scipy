@@ -13,11 +13,14 @@ from numpy.ma import masked, nomask
 import scipy.stats.mstats as mstats
 from scipy import stats
 from common_tests import check_named_results
-from numpy.testing import TestCase, run_module_suite
 from numpy.testing.decorators import skipif
-from numpy.ma.testutils import (assert_equal, assert_almost_equal,
-    assert_array_almost_equal, assert_array_almost_equal_nulp, assert_,
-    assert_allclose, assert_raises)
+from numpy.testing import (
+    TestCase, run_module_suite, assert_, assert_array_almost_equal_nulp,
+    assert_allclose, assert_raises,
+    )
+from numpy.ma.testutils import (
+    assert_equal, assert_almost_equal, assert_array_almost_equal,
+    )
 
 
 class TestMquantiles(TestCase):
